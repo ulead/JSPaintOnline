@@ -57,8 +57,8 @@ document.querySelector("#colorpicker").addEventListener("input",event=>{
 
 document.querySelectorAll(".drawsize").forEach(element => {
     addEventListener("click",event =>{
-        var clicked = event.target;
-        var size = clicked.id;
+        var item  = event.target;
+        var size = item .id;
         setSize(size);
 
 
