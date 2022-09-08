@@ -21,7 +21,7 @@ window.addEventListener('load' ,() =>{
 
    }
 
-   function finishPosition(){
+   function stopPosition(){
     painting =false ;
     ctx.beginPath();
 
@@ -42,7 +42,7 @@ window.addEventListener('load' ,() =>{
    
 
    canvas.addEventListener('mousedown', startPosition);
-   canvas.addEventListener('mouseup', finishPosition);
+   canvas.addEventListener('mouseup', stopPosition);
    canvas.addEventListener('mousemove',  draw);
 
 
@@ -79,12 +79,12 @@ function setSize(dsize){
 document.querySelector("#save").addEventListener("click",event=>{
     console.log("save");
     var image = canvas.toDataURL();
-    // Create a link
+    
     var aDownloadLink = document.createElement('a');
-    // Add the name of the file to the link
+   
     aDownloadLink.download = 'canvas_image.png';
-    // Attach the data to the link
+    
     aDownloadLink.href = image;
-    // Get the code to click the download link
+   
     aDownloadLink.click();
 });
