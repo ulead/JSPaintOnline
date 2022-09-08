@@ -1,0 +1,25 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+#canvas{
+    border:2px solid black;
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.fixed{
+    width:50%;
+}
+.flex-item{
+    padding: 20px;
+    flex-grow: 2;
+}
