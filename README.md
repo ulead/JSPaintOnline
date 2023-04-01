@@ -1,5 +1,5 @@
 # JSPaintOnline
-A canvas very basic Paint Oneline
+A canvas very basic Paint Online
 
 
 JavaScript Canvas Paint 
